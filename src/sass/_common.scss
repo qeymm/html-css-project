@@ -9,18 +9,10 @@
   --white: #ffffff;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-img {
-  display: block;
 }
 
 ul,
@@ -28,9 +20,10 @@ ol {
   list-style-type: none;
 }
 
-.body {
+main {
   background-color: var(--red);
 }
+
 // @media screen and (max-width: 375px) {
 //   .container {
 //     width: 335px;
