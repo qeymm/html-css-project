@@ -1,23 +1,64 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
-  --black: #111;
-  --red: #ae1332;
-  --green: #a4cb66;
-  --yellow: #f5ce13;
-  --white: #ffffff;
-}
+// Text Color
+$black: #000;
+$hotpink: #ae1332;
+$freshgreen: #a4cb66;
+$yellow: #f5ce13;
+$white: #fff;
 
+<<<<<<< Updated upstream
 html {
   scroll-behavior: smooth;
 }
 
 * {
   padding: 0;
+=======
+// Background Color
+$background-flesh: #ffc3c5;
+$strawberry: #f8766b;
+$banana: #edd251;
+$watermelon: #9dc262;
+$lime: #bfd663;
+$apple: #e93f29;
+$peach: #db4f4b;
+$plum: #9b5366;
+$orange: #f47f4c;
+$kiwi: #98b37e;
+$pop-up: #e03f5e;
+$send-submit: #9dc162;
+
+// * {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+// }
+
+// ul,
+// ol {
+//   list-style-type: none;
+// }
+
+// main {
+//   background-color: var(--red);
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+>>>>>>> Stashed changes
   margin: 0;
+}
+html {
   box-sizing: border-box;
 }
+<<<<<<< Updated upstream
 
 img {
   display: block;
@@ -59,5 +100,51 @@ ol {
   .container {
     width: 1136px;
     margin: 128px auto;
+=======
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.icon {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+>>>>>>> Stashed changes
   }
 }
