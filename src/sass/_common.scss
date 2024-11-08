@@ -1,21 +1,13 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
 
-:root {
-  --black: #111;
-  --red: #ae1332;
-  --green: #a4cb66;
-  --yellow: #f5ce13;
-  --white: #ffffff;
-}
+// Text Color
+$black: #000;
+$hotpink: #ae1332;
+$freshgreen: #a4cb66;
+$yellow: #f5ce13;
+$white: #fff;
 
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  padding: 0;
-=======
 // Background Color
 $background-flesh: #ffc3c5;
 $strawberry: #f8766b;
@@ -30,21 +22,6 @@ $kiwi: #98b37e;
 $pop-up: #e03f5e;
 $send-submit: #9dc162;
 
-// * {
-//   padding: 0;
-//   margin: 0;
-//   box-sizing: border-box;
-// }
-
-// ul,
-// ol {
-//   list-style-type: none;
-// }
-
-// main {
-//   background-color: var(--red);
-// }
-
 h1,
 h2,
 h3,
@@ -52,56 +29,65 @@ h4,
 h5,
 h6,
 p {
->>>>>>> Stashed changes
   margin: 0;
 }
 html {
   box-sizing: border-box;
 }
-
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.icon {
+  fill: currentColor;
+  stroke: currentColor;
 }
 
-ul,
-ol {
-  list-style-type: none;
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
 }
 
-main {
-  background-color: var(--red);
-}
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
 
-// @media screen and (max-width: 375px) {
-//   .container {
-//     width: 335px;
-//   }
-// }
-
-// @media screen and (max-width: 768px) {
-//   .container {
-//     width: 335px;
-//     margin: 72px auto;
-//   }
-// }
-
-// @media screen and (min-width: 375px) {
-//   .container {
-//     width: 335px;
-//     margin: 72px auto;
-//   }
-// }
-
-// @media screen and (min-width: 768px) {
-//   .container {
-//     width: 736px;
-//     margin: 100px auto;
-//   }
-// }
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1136px;
-    margin: 128px auto;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 32px;
   }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%) clip rect(0 0 0 0) overflow hidden;
 }
